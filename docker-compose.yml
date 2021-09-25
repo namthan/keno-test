@@ -1,0 +1,16 @@
+version: "3.8"
+services:
+  likelove:
+    build:
+      context: .
+      target: chatdemo
+      dockerfile: ./Dockerfile
+    container_name: chatdemo
+    restart: always
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/chatdemo
+    tty: true
+    environment:
+      PORT: 3000
