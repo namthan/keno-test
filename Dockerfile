@@ -1,6 +1,6 @@
 FROM node:12 as base
-RUN mkdir -p /usr/src/chatdemo
-WORKDIR /usr/src/chatdemo
+RUN mkdir -p /usr/src/kenotest
+WORKDIR /usr/src/kenotest
 COPY package*.json ./
 RUN npm install -g pm2
 RUN yarn install

@@ -3,14 +3,14 @@ services:
   likelove:
     build:
       context: .
-      target: chatdemo
+      target: kenotest
       dockerfile: ./Dockerfile
-    container_name: chatdemo
+    container_name: kenotest
     restart: always
     ports:
       - "3000:3000"
     volumes:
-      - .:/chatdemo
+      - .:/kenotest
     tty: true
     environment:
       PORT: 3000
