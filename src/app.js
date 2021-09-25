@@ -5,8 +5,6 @@ import dotenv from "dotenv";
 import http from 'http';
 import mongoose from 'mongoose';
 import orderRoute from "./orders/route";
-import { ProductModel } from "./orders/productModel";
-import { CustomerModel } from "./orders/customerModel";
 
 const app = express();
 app.use(urlencoded({ extended: true, limit: "500mb" }));
